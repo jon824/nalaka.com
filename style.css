@@ -78,33 +78,33 @@ nav{
 nav.close{
     width: 73px;
 }
-nav .logo-name{
+ .logo-name{
     display: flex;
     align-items: center;
 }
-nav .logo-image{
+ .logo-image{
     display: flex;
     justify-content: center;
     min-width: 45px;
 }
-nav .logo-image img{
+ .logo-image img{
     width: 90px;
     object-fit: cover;
     border-radius: 20%;
 }
 
-nav .logo-name .logo_name{
+ .logo-name .logo_name{
     font-size: 22px;
     font-weight: 600;
     color: var(--text-color);
     margin-left: 14px;
     transition: var(--tran-05);
 }
-nav.close .logo_name{
+.close .logo_name{
     opacity: 0;
     pointer-events: none;
 }
-nav .menu-items{
+ .menu-items{
     margin-top: 40px;
     height: calc(100% - 90px);
     display: flex;
