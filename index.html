@@ -1,238 +1,136 @@
 <!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the ricer</title>
+    
+    <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/download.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="tailwindcss-colors.css">
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title> 
 </head>
 <body>
-
-    <section>
-        <nav>
-            <div class="logo">
-                <h1>RED RICER
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.webp" alt="">
             </div>
 
-            <ul>
-                <li><a href="addcard/index.html">කාඩ් පත ADD කරන්න</a></li>
-                <li><a href="bank/index.html">තහවරැ කරන්න</a></li>
+            <span class="logo_name">WINMAX PVT LTD.</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                
+                
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
             </ul>
+        </div>
+    </nav>
 
-            <div class="icons">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Nalaka's Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="text">Total Deposit</span>
+                        <span class="number"> 0</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-comments"></i>
+                        <span class="text">Withdraw</span>
+                        <span class="number">0</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-share"></i>
+                        <span class="text">Total Earn</span>
+                        <span class="number">0</span>
+                    </div>
+                </div>
             </div>
 
-        </nav>
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Recent Activity</span>
+                </div>
 
-      
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Activity</span>
+                        <span class="data-list"><a href="login/index.html" style="text-decoration: none; color: rgb(0, 204, 255);" > Account verify </a></span>
+                        <span class="data-list"><a href="ID/index.html" style="text-decoration: none; color: rgb(0, 204, 255);" >ID verify </a></span>
+                        <span class="data-list"><a href="Face/index.html" style="text-decoration: none; color: cyan;" >Face Verify </a></span>
+                        <span class="data-list"><a href="addcard/index.html" style="text-decoration: none; color: cyan;" > ADD Bank</a></span>
+                        <span class="data-list"><a href="getmoney/index.html" style="text-decoration: none; color: cyan;" > </a>Withdraw Money</a></span>
+         
+                       
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Type</span>
+                        <span class="data-list">Verify</span>
+                        <span class="data-list">Verify</span>
+                        <span class="data-list">Verify</span>  
+                          <span class="data-list">Verify</span>
+                          <span class="data-list">Money</span>
+                   
+                        
+                    </div>
+                    
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">None</span>
+                        <span class="data-list">None</span>
+                        <span class="data-list">None</span>
+                        <span class="data-list">None</span>
+                        <span class="data-list">None</span>
 
+                   </div>
+               
+                    
+                   
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-    <!--Products-->
-
-    <div class="products" id="Products">
-        <h1>රතු හාල් මිලදී ගැනීම.</h1>
-
-        <div class="box">
-            <div class="card">
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-
-                <div class="image">
-                    <img src="images/Red-rice.png">
-                </div>
-
-                <div class="products_text">
-                    <h2>1000 Kg</h2>
-                    <p>
-                        This Pakage Offer to Top up Event
-                    </p>
-                    <h3>කිලෝවක් රැ.200 </h3>
-                    <h3>රැ.200000 Gem</h3>
-                    <div class="products_star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <a href="1000.html" class="btn">ඇණවුම </a>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-
-                <div class="image">
-                    <img src="images/Red-rice.png">
-                </div>
-
-                <div class="products_text">
-                    <h2>2000 Kg</h2>
-                    <p>
-                        This Pakage Offer to Top up Event
-                    </p>
-                    <h3>කිලෝවක් රැ.200 </h3>
-                    <h3>රැ. 400000</h3>
-                    <div class="products_star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="2000.html" class="btn">ඇණවුම </a>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-
-                <div class="image">
-                    <img src="images/Red-rice.png">
-                </div>
-
-                <div class="products_text">
-                    <h2>4000 Kg</h2>
-                    <p>
-                        This Pakage Offer to Top up Event
-                    </p>
-                    <h3>කිලෝවක් රැ.200 </h3>
-                    <h3>රැ. 800000</h3>
-                    <div class="products_star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <a href="4000.html" class="btn">ඇණවුම </a>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-
-                <div class="image">
-                    <img src="images/Red-rice.png">
-                </div>
-
-                <div class="products_text">
-                    <h2>5000 Kg </h2>
-                    <p>
-                        This Pakage Offer to Top up Event
-                    </p>
-                    <h3>කිලෝවක් රැ.200 </h3>
-                    <h3>රැ.1000000</h3>
-
-                    <div class="products_star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <a href="5000.html" class="btn">ඇණවුම </a>
-                </div>
-
-            </div>
-
-           
-            </div>
-
-        </div>
-
-
-
-    
-        <script>
-            function functio(small){
-                var full = document.getElementById("imagebox")
-                full.src = small.src
-            }
-        </script>
-        
-    </div>
-    <br><br><br><br><br><br><br><br><br><br>
-
-    <!--Footer-->
-
-    <footer>
-        <div class="footer_main">
-            <div class="tag">
-                <h1>Contact</h1>
-                <a href="#"><i class="fa-solid fa-house"></i>No.22 Six , Colombo</a>
-                <a href="#"><i class="fa-solid fa-phone"></i>+94 740000000</a>
-                <a href="#"><i class="fa-solid fa-envelope"></i>topup25@gmail.com</a>
-            </div>
-
-            <div class="tag">
-                <h1>Get Help</h1>
-                <a href="#" class="center">FAQ</a>
-                <a href="#" class="center">Shipping</a>
-                <a href="#" class="center">Returns</a>
-                <a href="#" class="center">Payment Options</a>
-            </div>
-
-            <div class="tag">
-                <h1>Our Stores</h1>
-                <a href="#" class="center">Sri Lanka</a>
-                <a href="#" class="center">Korean</a>
-                <a href="#" class="center">Thayiwan</a>
-                <a href="#" class="center">Japan</a>
-            </div>
-
-            <div class="tag">
-                <h1>Follw Us</h1>
-                <div class="social_link">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>                    
-                </div>
-            </div>
-
-            <div class="tag">
-                <h1>Newsletter</h1>
-                <div class="search_bar">
-                    <input type="text" placeholder="You email id here">
-                    <button type="submit">Subscribe</button>
-                </div>
-            </div>
-
-        </div>
-    </footer>
-
-    
+    <script src="script.js"></script>
 </body>
 </html>
